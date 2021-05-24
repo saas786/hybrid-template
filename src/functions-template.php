@@ -13,24 +13,7 @@
 
 namespace Hybrid\Template;
 
-use Hybrid\Template\Contracts\Hierarchy;
 use Hybrid\Proxies\App;
-
-/**
- * Returns the global hierarchy. This is a wrapper around the values stored via
- * the template hierarchy object.
- *
- * @since  1.0.0
- * @access public
- * @return array
- */
-function hierarchy() {
-
-	return apply_filters(
-		'hybrid/template/hierarchy',
-		App::resolve( Hierarchy::class )->hierarchy()
-	);
-}
 
 /**
  * A better `locate_template()` function than what core WP provides. Note that

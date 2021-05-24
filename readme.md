@@ -39,7 +39,6 @@ After that point, you can register the service provider:
 
 ```php
 $themeslug->provider( \Hybrid\Template\TemplatesServiceProvider::class );
-$themeslug->provider( \Hybrid\Template\HierarchyServiceProvider::class );
 ```
 
 ## Copyright and License
